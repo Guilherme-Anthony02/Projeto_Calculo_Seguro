@@ -2,42 +2,79 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo Seguro & IPVA Automotivo Enterprises</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo Seguro & IPVA Automotivo Enterprises</title>
 
-    <link rel="stylesheet" href="css/style_veiculo.css">
+  <link rel="stylesheet" href="css/style_veiculo.css">
+  <script src="js/script_calculo.js" defer></script>
+  <script src="js/script_veiculo.js" defer></script>
 
 </head>
 
 <body>
-    <h1>CÁLCULO Seguro & IPVA Automotivo</h1>
+  <h1>Cálculo Seguro & IPVA Automotivo</h1>
 
-    <div id="geral">
-        <form id="formulario">
-        <label for="modelo">Informe o modelo do veículo</label>
-        <input type="text" name="modelo" id="modelo">
-        
-        <label for="marca">Informe a marca do veículo</label>
-        <input type="text" name="marca" id="marca"> 
+  <div id="geral">
+    <form id="formulario">
+      <label for="modelo">Informe o modelo do veículo:</label>
+      <input type="text" name="modelo" id="modelo">
 
-        <label for="placa">Informe a placa do veículo</label>
-        <input type="text" name="marca" id="marca">
+      <label for="marca">Informe a marca do veículo:</label>
+      <input type="text" name="marca" id="marca">
 
-        <label for="ano">Informe o ano de fabricação do veículo</label>
-        <input type="number" name="ano" id="ano">
+      <label for="placa">Informe a placa do veículo:</label>
+      <input type="text" name="placa" id="placa">
 
-        <label for="valor">Informe o valor de mercado do veículo</label>
-        <input type="number" name="valor" id="valor">
+      <label for="ano">Informe o ano de fabricação do veículo:</label>
+      <input type="number" name="ano" id="ano">
 
-        <label for="combustivel">Informe o tipo de combustível</label>
-        <input type="text" name="combustivel" id="combustivel">
-       
+      <label for="valor">Informe o valor de mercado do veículo:</label>
+      <input type="number" name="valor" id="valor">
 
-        </form>
+      <br>
 
+      <h3>Tipo de Combustível</h3>
 
+      <div class="combustivel">
+        <label>
+            <input type="radio" name="combustivel" value="gasolina" required>
+            Gasolina
+        </label>
+
+        <label>
+            <input type="radio" name="combustivel" value="etanol">
+            Etanol
+        </label>
+
+        <label>
+            <input type="radio" name="combustivel" value="bicombustivel">
+            Bicombustível
+        </label>
+
+        <label>
+            <input type="radio" name="combustivel" value="hibrido">
+            Híbrido
+        </label>
+
+        <label>
+            <input type="radio" name="combustivel" value="eletrico">
+            Elétrico
+        </label>
     </div>
+    <br><br><br>
+      <button type="submit">Adicionar</button>
+
+    </form>
+
+    <h2>Veículos Cadastrados</h2>
+
+    <div id="listaVeiculos"></div>
+
+  </div>
+
+  <script type="module" src="js/script_veiculo.js"></script>
+
 </body>
 
 </html>

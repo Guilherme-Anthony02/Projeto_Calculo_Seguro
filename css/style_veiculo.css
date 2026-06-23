@@ -1,9 +1,33 @@
-label, input {
+label, input{
     display: block;
-    margin-bottom: 10px;
+    margin: 10px 0px;
+    width: 350px;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 0px 15px
+}
+
+form{
+    background-color: yellowgreen;
+    padding: 5px;
+    border-radius: 8px;
 }
 
 h1 {
     text-align: center;
     color: green;
+}
+
+.combustivel{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.veiculo{
+    margin-top:15px;
+    padding:15px;
+    border-left:5px solid #007bff;
+    background:#f9f9f9;
+    border-radius:5px;
 }

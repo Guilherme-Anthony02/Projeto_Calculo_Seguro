@@ -21,6 +21,5 @@ export function calcularIPVA(valorVeiculo, combustivel, idadeVeiculo) {
     return valorVeiculo * aliquota;
 }
 
-const valorSeguro = document.getElementById('valor')
-return valorSeguro * 0.10
+
 
